@@ -34,18 +34,14 @@ const DetailsStack = ({ route }) => {
   return (
     <View style={styles.container}>
       <View style={styles.body}>
-        <View style={{ paddingHorizontal: 10 }}>
+        <View style={{ paddingHorizontal: 40 }}>
           <Text style={styles.text}>Property type: {details.propertyType}</Text>
           <Text style={styles.text}>
             Furniture type: {details.furnitureType}
           </Text>
           <Text style={styles.text}>Bed room: {details.bedRoom}</Text>
-          <Text style={styles.text}>
-            Date and Time: {details.dateTime}
-          </Text>
-          <Text style={styles.text}>
-            Address: {details.address}
-          </Text>
+          <Text style={styles.text}>Date and Time: {details.dateTime}</Text>
+          <Text style={styles.text}>Address: {details.address}</Text>
           <Text style={styles.text}>
             Price per month: {details.monthyRentPrice}
           </Text>
@@ -163,8 +159,8 @@ const styles = StyleSheet.create({
     shadowRadius: 2,
     marginHorizontal: 4,
     marginVertical: 6,
-    maxWidth: "85%",
     alignSelf: "center",
+    width: "100%",
   },
   icon: {
     backgroundColor: "coral",
@@ -174,7 +170,7 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 10,
     marginBottom: 5,
-    width: "85%",
+    width: "100%",
     alignSelf: "center",
   },
   descriptionDetails: {

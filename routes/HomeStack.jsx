@@ -1,6 +1,6 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import DemoProject from "../DemoProject";
+import MainProject from "../Main Project";
 import DetailsStack from "./DetailsStack";
 const HomeStack = () => {
   const Stack = createNativeStackNavigator();
@@ -13,7 +13,7 @@ const HomeStack = () => {
       <Stack.Screen
         options={{ headerShown: false }}
         name="Home"
-        component={DemoProject}
+        component={MainProject}
       />
       <Stack.Screen name="Details" component={DetailsStack} />
     </Stack.Navigator>

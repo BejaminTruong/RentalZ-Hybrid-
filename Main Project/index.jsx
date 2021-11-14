@@ -8,7 +8,7 @@ import { TextInput } from "react-native-gesture-handler";
 import { db } from "../firebase";
 import * as Progress from "react-native-progress";
 import CustomCheckbox from "../components/CustomCheckbox";
-const DemoProject = ({ navigation }) => {
+const MainProject = ({ navigation }) => {
   const [rental, setRental] = useContext(RentalContext);
   const [filterData, setFilterData] = useState([]);
   const [search, setSearch] = useState("");
@@ -186,7 +186,7 @@ const DemoProject = ({ navigation }) => {
   );
 };
 
-export default DemoProject;
+export default MainProject;
 
 const styles = StyleSheet.create({
   container: {
@@ -195,8 +195,7 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    paddingHorizontal: 40,
-    paddingTop: 20,
+    padding: 20,
   },
   list: {
     flex: 1,
@@ -208,8 +207,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   searchBar: {
-    paddingHorizontal: 40,
-    paddingTop: 40,
+    paddingHorizontal: 20,
+    paddingTop: 20,
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
